@@ -56,17 +56,17 @@ function Create13Tables($prefix) {
 	$create_status[$lang_create_pixelpost] = $lang_created;
 
 	// Comments table
-	mysql_query("CREATE TABLE IF NOT EXISTS {$prefix}comments (
-				 `id` INT(11) NOT NULL auto_increment,
-				 `parent_id` INT(11) NOT NULL DEFAULT '0',
-				 `datetime` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
-				 `ip` VARCHAR(20) NOT NULL DEFAULT '',
-				 `message` TEXT NOT NULL,
-				 `name` VARCHAR(20) NOT NULL DEFAULT '',
-				 `url` VARCHAR(40) NOT NULL DEFAULT '',
-				 KEY id (`id`))")or die("MySQL Error: ". mysql_error());
-	
-	$create_status[$lang_create_comments] = $lang_created;
+//	mysql_query("CREATE TABLE IF NOT EXISTS {$prefix}comments (
+//				 `id` INT(11) NOT NULL auto_increment,
+//				 `parent_id` INT(11) NOT NULL DEFAULT '0',
+//				 `datetime` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00',
+//				 `ip` VARCHAR(20) NOT NULL DEFAULT '',
+//				 `message` TEXT NOT NULL,
+//				 `name` VARCHAR(20) NOT NULL DEFAULT '',
+//				 `url` VARCHAR(40) NOT NULL DEFAULT '',
+//				 KEY id (`id`))")or die("MySQL Error: ". mysql_error());
+//
+//	$create_status[$lang_create_comments] = $lang_created;
 
 	// Visitors table
 	mysql_query("CREATE TABLE IF NOT EXISTS {$prefix}visitors (
